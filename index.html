@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" title="no title">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Income Tax Calculator</title>
 
@@ -13,15 +13,14 @@
 <body>
     <h1>Income tax Calculator</h1>
     <div class="Container-fluid">
-        <form class="" action="index.html" method="post">
-            <label>GrossIncome</label>
-            <input id="income" type="number" />
-            <button id="calculate">Calculate</button>
-            <br>
+        <form id="incomeTax">
+          <label for="income">Gross Income</label>
+            <input id="income" type="text">
 
-
-
+          <button type="submit" class="btn">Calculate</button>
         </form>
+
+
 
 
     </div>
