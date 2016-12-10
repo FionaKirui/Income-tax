@@ -1,22 +1,22 @@
-# ping-pong
-This is an  assignment on object-oriented programming.
-It tests the understanding of  necessary tools such as if-/else-statements and loops.
-if the number is divisible by 3 print ping;
-if the number is divisible by 5 print pong;
-if the number is divisible by 3 and 5 print ping-pong;
-else, print the number.
+# NetIncome
+Net income is the residual amount of earnings after all deductions have been taken from gross pay, such as taxes and net income is the residual amount of earnings after all deductions have been taken from gross pay, such as payroll taxes and retirement plan contributions(NSSF) plan contributions and health insurance(NHIF)
 
-## Code Example
-9 is divisible by 3 hence ping;
-10 is divisible by 5 hence pong;
-15 is divisible by 3 and 5 hence ping-pong;
-19 is not divisible by either number hence, print the number;
+NetIncome= GrossIncome- Paye-NHIF-NSSF(employercontribution)
+Step1:
+Calculate the Paye
+Paye=(GrossIncome-Nssf[personalcontribution](tax rates))
+
+0-10,164 rate is	10%
+10,165 - 19,740	rate is 15%
+19,741 - 29,316	rate is 	20%
+29,317 - 38,892	rate is 25%
+Above 38,892	rate is 30%
+<!--we need to find a better way to define this  -->
+
+#Code Example
 
 
 ## Motivation
-This was an object-oriented example at Moringa School.
 
 
 ## License
-
-All rights belong to Moringa School.
