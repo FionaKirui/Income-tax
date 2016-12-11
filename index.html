@@ -6,22 +6,31 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
 
-    <title>Income Tax Calculator</title>
+    <title>Net Income Calculator</title>
 
 </head>
 
 <body>
-    <h1>Income tax Calculator</h1>
+    <h1> Net Income Calculator</h1>
     <div class="Container-fluid">
-        <form class="" action="index.html" method="post">
-            <label>grossIncome</label>
-            <input id="income" type="number" />
-            <button id="calculate">Calculate</button>
+
+          <form id="incometax">
+            <label for="grossIncome">Gross Income:</label>
+            <input id="grossIncome" type="number">
+            <button type="submit">Calculate NetPay</button>
+            <br>
+            <label>Paye </label> <span id="paye"></span>
+            <br>
+            <label>NHIF </label> <span id="nhif"></span>
+            <br>
+            <label>NetPay </label> <span id="netpay"></span>
             <br>
 
+          </form>
+          <ul id="answer"></ul>
 
 
-        </form>
+
 
 
     </div>

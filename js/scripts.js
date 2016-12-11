@@ -82,3 +82,21 @@ console.log(calcNhif([40000]));
   }
 console.log(calcNetpay([40000]));
 // netpay=grossIncome-paye-personalrelie -nhif-nssf(200)
+$( document ).ready(function() {
+    $("#incometax").click(function() {
+      payments.push({
+        grossIncome: parseInt($("#grossIncome").val())
+
+          paye = 0;
+
+        for (x in payments) {
+          paye += payments[x].grossIncome;
+        }
+      });
+    });
+
+    $("#paye").html(paye);
+    $("#grossIncome").val("");
+    $("#paye").html(calcPayes(paye));
+  
+});
