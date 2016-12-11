@@ -45,6 +45,7 @@ Personal Relief is a constant of 1280
 NHIF current rate is based on the contribution bracket for grossIncome
 
 NHIF Current Rates 
+
 | Gross Pay (Ksh)	| Deduction (Ksh)	 	| Gross Pay (Ksh)	      | Deduction (Ksh) |
 | ----------------- | --------------------- | ----------------------- | --------------- |
 | Up to 5,999		|	150	 				| 40,000 - 44,999		  | 1,000           |
@@ -55,7 +56,7 @@ NHIF Current Rates
 | 20,000 - 24,999	|	750	 				| 80,000 - 89,999		  | 1,500           |
 | 25,000 - 29,999	| 	850	 				| 90,000 - 99,999		  | 1,600           |
 | 30,000 - 34,999	|	900	 				| 100,000 and above	      | 1,700           |
-| 35,000 - 39,999	|	950	 	 	 		|
+| 35,000 - 39,999	|	950	 	 	 		|                         |                 |
 ## NETPAY
 -----------------------------------------------------------------------------------------------------------
 A function of PAYE, NSSF, NHIF and GrossIncome
