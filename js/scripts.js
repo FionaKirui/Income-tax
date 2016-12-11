@@ -1,10 +1,11 @@
 // global variables
 var paye = 0;
 var nhif = 0;
+var taxRelief=1162;
 
 function calcPaye(grossIncome) {
     taxablePay = (grossIncome - 200);
-    var taxRelief=1162;
+
 
     // 200 is the personal Nssf deductioni
 
@@ -25,7 +26,7 @@ function calcPaye(grossIncome) {
 
     return paye-taxRelief;
 }
-console.log(calcPaye([50000]));
+console.log(calcPaye([40000]));
 // paye ends here
 function calcNhif(grossIncome) {
     if (grossIncome <= 5999) {
@@ -65,17 +66,19 @@ function calcNhif(grossIncome) {
     }
       return nhif;
 }
-console.log(calcNhif([50000]));
+console.log(calcNhif([40000]));
 // Nhif ends here
 
-function calcNetpay(grossIncome) {
+ function calcNetpay(grossIncome) {
 
     var netpay=0;
-    var netpay=(grossIncome-paye-nhif-200);
+    var nssf = 200;
+     netpay=(grossIncome-(paye-taxRelief)-nhif-nssf);
 // nssf Tier 1()
 // paye after relief
-    return netpay;
+   return netpay;
+
 
   }
-console.log(calcNetpay([50000]));
+console.log(calcNetpay([40000]));
 // netpay=grossIncome-paye-personalrelie -nhif-nssf(200)
