@@ -1,3 +1,4 @@
+![alt text](https://github.com/FionaKirui/Income-tax/blob/gh-pages/images/readme/tax_planning_banner.jpg)
 # Income Tax Rates in Kenya(old and new rates)
 ----------------------------------------------------------------------------------------------------
 This is a basic Income tax calculator with functionality allowng you to calculate your monthly taxes using the old rates and new rates to be effected on January 2017.
