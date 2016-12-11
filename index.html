@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Income Tax Calculator</title>
 
@@ -15,13 +15,50 @@
     <div class="Container-fluid">
         <form id="incomeTax">
           <label for="income">Gross Income</label>
-            <input id="income" type="text">
+            <input id="income" type="number">
 
-          <button type="submit" class="btn">Calculate</button>
+          <button type="submit" class="btn" id="newrate">Calculate new rates</button>
+          <button type="submit" class="btn" id="oldrate">Calculate old rates</button>
         </form>
 
-
-
+        <table>
+            <tr>
+                <th>Income Variable</th>
+                <th>Contribution</th>
+            </tr>
+            <tr>
+                <td>Gross Pay</td>
+                <td id="grossIncome"></td>
+            </tr>
+            <tr>
+                <td>NSSF Contribution</td>
+                <td id="nssf"></td>
+            </tr>
+            <tr>
+                <td>Taxable Pay</td>
+                <td id= "taxablePay"></td>
+            </tr>
+            <tr>
+                <td>Personal Relief</td>
+                <td id="personalR"></td>
+            </tr>
+            <tr>
+                <td>PAYE</td>
+                <td id="paye"></td>
+            </tr>
+            <tr>
+                <td>NHIF Contribution</td>
+                <td id="nhif"></td>
+            </tr>
+            <tr>
+                <td>Net Pay</td>
+                <td id="netPay"></td>
+            </tr>
+            <tr>
+                <td>Effective Tax Rate</td>
+                <td id="effectiveTax"></td>
+            </tr>
+        </table>
 
     </div>
 
