@@ -12,13 +12,13 @@ The Specifications using old nssf rates and variables to consider include:
 
 | Behavior | Input Example | Output Example(old nssf rates) | Output Example(new nssf rates) |
 | ---------| ------------- | ------------------------------ | ------------------------------ |
-| nssf is a constant of 200 for anyone earning | 53000 | 200 | 1080 |
+| nssf is a constant of 200 for old rate and 6% of gross with a max of 1080 for new rates | 53000 | 200 | 1080 |
 | nhif is a value based on your gross income bracket | 53000 | 1200 | 1200 |
-| personal relief is a constant for anyone liaaable to pay taxes | 53000 | 1162  | 1162 |
-| taxable pay is a function of grossIncome less  personal relief | 53000 | 52800 | 51920 |
+| personal relief is a constant for anyone liable to pay taxes | 53000 | 1162  | 1162 |
+| taxable pay is grossIncome less  deductions(nssf) | 53000 | 52800 | 51920 |
 | paye is the taxable pay less personal relief | 53000 | 9,772 | 9508.10 |
-| netpaye is a function of nhif, nssf,paye and grossIncome | 53000 | 41,828 | 411211 |
-| effective tax rate is a function of paye and grossIncome | 53000 | 18.44% | 17.94%
+| netpay is a function of nhif, nssf,paye and grossIncome | 53000 | 41,828 | 411211 |
+| effective tax rate is a function of paye and grossIncome | 53000 | 18.44% | 17.94% |
 
 ## Features
 It is built using HTML and CSS; Bootstrap; JavaScript and jQuery.
