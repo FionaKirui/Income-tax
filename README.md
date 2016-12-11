@@ -1,7 +1,7 @@
 ![alt text](https://github.com/FionaKirui/Income-tax/blob/gh-pages/images/readme/tax_planning_banner.jpg)
 # Income Tax Rates in Kenya(old and new rates)
 ----------------------------------------------------------------------------------------------------
-Pplanning for you taxes can be stressful both as an employer and employee. That is why we came up with this online income tax calculator to help you do your monthly taxes for you without the stress of so much math.
+Planning for you taxes can be stressful both as an employer and employee. That is why we came up with this online income tax calculator to help you do your monthly taxes for you without the stress of so much math.
 This is a basic Income tax calculator with functionality allowng you to calculate your monthly taxes using the old rates and new rates to be effected on January 2017.
 The most basic variables are considered to calculate this income tax and they include: 
  - PAYE
@@ -57,6 +57,6 @@ SOFTWARE.
 
 
 ### Contact Information
-Sophia -
+Sophia - njerimurage92@gmail.com
 Fiona -
 
