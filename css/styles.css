@@ -136,14 +136,17 @@ header {
 /*--Landing Page--*/
 
 .banner{
-    background: url(../images/glasses.jpg) no-repeat 0px 0px;
+    background: url(../images/tax.jpeg) no-repeat 0px 0px;
     background-size:cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
     min-height:700px;
+    opacity: 1;
+    
 }
+
 
 .banner-info {
     padding: 14em 0 0;
@@ -155,13 +158,14 @@ header {
     color: #ffffff;
     font-weight: 700;
     line-height: 1.4em;
+    
 }
 
 .banner-info p {
-    font-size: 1.2em;
-    color: #a2a2a2;
+    font-size: 2em;
+    color: #fff;
     margin: 1em 0;
-    line-height: 1.8em;
+    line-height: 1.8em;   
 }
 
 /*--Landing Page--*/
@@ -756,10 +760,11 @@ th {
     letter-spacing: 2PX;
 }
 .contact .left{
-    border: 10px solid #fff;
+    border: 1px solid #44c7f4;
     padding: 1px 1px 1px 1px;
     letter-spacing: 4px;
     box-shadow: 1px 1px 5px 4px #E3E3E3;
     margin-left: 20px;
+    
     
 }

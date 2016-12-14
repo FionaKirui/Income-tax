@@ -27,7 +27,7 @@ jQuery(document).ready(function() {
     $('.Count').each(function () {
         var $this = $(this);
         jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-            duration: 400,
+            duration: 4000,
             easing: 'swing',
             step: function () {
                 $this.text(Math.ceil(this.Counter));
