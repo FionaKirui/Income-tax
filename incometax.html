@@ -72,15 +72,14 @@
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav">
 					<li><a class="active" href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
 					  <ul class="dropdown-menu">
-						<li><a href="#incometax.html">Income Tax Calculator</a></li>
+						<li><a href="#incometax.html#incomelink">Income Tax Calculator</a></li>
 						<li><a href="#">VAT Calculator</a></li>
 					  </ul>
 					</li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="contact.html#end">Contact</a></li>
 				  </ul>
               </div>
           </div>
@@ -89,9 +88,9 @@
         
           
     <!--Calculator-->
-        	<div class="about">
+        	<div class="about" >
 		     <div class="container">
-			 	<h3>Income Tax Calculator</h3>
+			 	<h3 id="incomelink">Income Tax Calculator</h3>
 				 <div class="about-top">
                      <div class="col-md-6 ab-text">
                         
@@ -102,8 +101,8 @@
                                 </br>
                                 </br>
                              
-                              <button type="submit" class="btn" id="newrate">Calculate new rates</button>
-                              <button type="submit" class="btn" id="oldrate">Calculate old rates</button>
+                              <button type="submit" class="btn" id="newrate">Calculate (new nssf rates)</button>
+                              <button type="submit" class="btn" id="oldrate">Calculate (old nssf rates)</button>
                             </form>
 
                             <table>
@@ -141,28 +140,28 @@
                                 </tr>
                                 <tr>
                                     <td>Effective Tax Rate</td>
-                                    <td id="effectiveTax"></td>
+                                    <td id="effectiveTax">%</td>
                                 </tr>
                             </table>
                         </div>
                      </div>
                      
                      <div class="col-md-6 info">
-                         <div class="about-content">
+                         <div class="about-content calc">
                              <div class="about-section">
                                  <h5><a class="about-section-title" href="#about-1">
 								 NSSF<i class="glyphicon glyphicon-chevron-down"></i></a>
                                  </h5>
                                  <div id="about-1" class="about-section-content" style="display: none;">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                      <p>The National Social Security Fund (NSSF) is a government agency that was established in 1965 through an Act of Parliament. It's mandatory national scheme whose main objective was to provide basic financial security benefits to Kenyan upon retirement for employees in the both the formal and informal sectors of the economy. NSSF pension contribution rates are based on an individual's gross income..</p>
                                  </div>
                              </div>
-                             <div class="about-section">
+                             <div class="calc-section">
                                  <h5><a class="about-section-title" href="#about-2">
 								PAYE<i class="glyphicon glyphicon-chevron-down"></i></a>
                                  </h5>
                                  <div id="about-2" class="about-section-content" style="display: none;">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                     <p>Pay-as-you-earn is the process by which the government via the Kenya Revenue Authority (KRA) collects employee taxes directly from the employer. It’s the method of deducting income tax from salaries and wages applies to all income from any office or employment. Thus "pay-as-you-earn" applies to weekly wages, monthly salaries, annual salaries, bonuses, commissions, directors' fees (whether the director is resident or non-resident) pensions paid to pensioners who reside in Kenya, and any other income from an office or employment. The system applies to all cash emoluments and all credits in respect of emoluments to employees' accounts with their employers, no matter to what period they relate. It does not include earnings from "casual employment" which means any engagement with any one employer, which is made for a period of less than one month. Although, regular part-time employees and regular casual employment where the employees are employed casually but regularly are not considered to be casual employees.</p>
                                  </div>
                              </div>
                              <div class="about-section">
@@ -170,7 +169,7 @@
 								Personal Relief<i class="glyphicon glyphicon-chevron-down"> </i> </a>
                                  </h5>
                                  <div id="about-3" class="about-section-content" style="display: none;">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                     <p>A resident individual with taxable income is entitled to a personal relief of Kshs. 1,280 per month(new rates)/1162 per month(oldrates). This is a uniform relief and employers are advised to automatically grant personal relief to all employees irrespective of their marital status.</p>
                                  </div>
                              </div>
                              <div class="about-section">
@@ -178,7 +177,7 @@
 								 NHIF<i class="glyphicon glyphicon-chevron-down"> </i> </a>
                                  </h5>
                                  <div id="about-4" class="about-section-content" style="display: none;">
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                     <p>The National Hospital Insurance Fund (NHIF) is a government agency that was established in 1966 as a department under the Ministry of Health through an Act of Parliament. Its core mandate is to provide medical insurance cover to all its members and their declared defendants (spouse and children). The NHIF membership is open to all Kenyans who have attained the age of 18 years and years and have a monthly income of more than Kshs 1,000 and contribution rates are based on an individual's gross income.</p>
                                  </div>
                              </div>
                          </div>

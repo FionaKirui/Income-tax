@@ -26,7 +26,7 @@ The Specifications using old nssf rates and variables to consider include:
 It is built using HTML and CSS; Bootstrap; JavaScript and jQuery.
 
 ## Live Website 
-View the complete site [here]()
+View the complete site [here](https://fionakirui.github.io/Income-tax/)
 
 ## Contributors
  - Fiona Kirui
@@ -57,6 +57,6 @@ SOFTWARE.
 
 
 ### Contact Information
-Sophia - njerimurage92@gmail.com
-Fiona -
+Sophia - SophiaNM
+Fiona -  FionaKirui
 
