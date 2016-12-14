@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css">
     <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
     <link href="bootstrap-social-gh-pages/bootstrap-social.less" rel="stylesheet">
-
 
 
     <title>Income Tax Calculator</title>
@@ -77,7 +76,7 @@
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
 					  <ul class="dropdown-menu">
-						<li><a href="incometax.html">Income Tax Calculator</a></li>
+						<li><a href="#incometax.html">Income Tax Calculator</a></li>
 						<li><a href="#">VAT Calculator</a></li>
 					  </ul>
 					</li>
@@ -89,19 +88,70 @@
     <!--Navigation-->
         
           
-    <!--About-->
+    <!--Calculator-->
         	<div class="about">
 		     <div class="container">
-			 	<h3>About Us</h3>
+			 	<h3>Income Tax Calculator</h3>
 				 <div class="about-top">
-                     <div class="col-md-5 ab-text">
-							<img src="images/2.jpg" alt="Corporate image" class="img-responsive">
+                     <div class="col-md-6 ab-text">
+                        
+                         <div class="Container-fluid">
+                            <form id="incomeTax">
+                              <label for="income">Gross Income</label>
+                                <input id="income" type="number">
+                                </br>
+                                </br>
+                             
+                              <button type="submit" class="btn" id="newrate">Calculate new rates</button>
+                              <button type="submit" class="btn" id="oldrate">Calculate old rates</button>
+                            </form>
+
+                            <table>
+                                <tr>
+                                    <th>Income Variable</th>
+                                    <th>Contribution</th>
+                                </tr>
+                                <tr>
+                                    <td>Gross Pay</td>
+                                    <td id="grossIncome"></td>
+                                </tr>
+                                <tr>
+                                    <td>NSSF Contribution</td>
+                                    <td id="nssf"></td>
+                                </tr>
+                                <tr>
+                                    <td>Taxable Pay</td>
+                                    <td id= "taxablePay"></td>
+                                </tr>
+                                <tr>
+                                    <td>Personal Relief</td>
+                                    <td id="personalR"></td>
+                                </tr>
+                                <tr>
+                                    <td>PAYE</td>
+                                    <td id="paye"></td>
+                                </tr>
+                                <tr>
+                                    <td>NHIF Contribution</td>
+                                    <td id="nhif"></td>
+                                </tr>
+                                <tr>
+                                    <td>Net Pay</td>
+                                    <td id="netPay"></td>
+                                </tr>
+                                <tr>
+                                    <td>Effective Tax Rate</td>
+                                    <td id="effectiveTax"></td>
+                                </tr>
+                            </table>
+                        </div>
                      </div>
-                     <div class="col-md-7 info" data-wow-delay=".5s">
+                     
+                     <div class="col-md-6 info">
                          <div class="about-content">
                              <div class="about-section">
                                  <h5><a class="about-section-title" href="#about-1">
-								 vision Lorem Ipsum<i class="glyphicon glyphicon-chevron-down"></i></a>
+								 NSSF<i class="glyphicon glyphicon-chevron-down"></i></a>
                                  </h5>
                                  <div id="about-1" class="about-section-content" style="display: none;">
                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -109,7 +159,7 @@
                              </div>
                              <div class="about-section">
                                  <h5><a class="about-section-title" href="#about-2">
-								Consectetur adipiscing<i class="glyphicon glyphicon-chevron-down"></i></a>
+								PAYE<i class="glyphicon glyphicon-chevron-down"></i></a>
                                  </h5>
                                  <div id="about-2" class="about-section-content" style="display: none;">
                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -117,7 +167,7 @@
                              </div>
                              <div class="about-section">
                                  <h5><a class="about-section-title" href="#about-3">
-								Dolor sit amet<i class="glyphicon glyphicon-chevron-down"> </i> </a>
+								Personal Relief<i class="glyphicon glyphicon-chevron-down"> </i> </a>
                                  </h5>
                                  <div id="about-3" class="about-section-content" style="display: none;">
                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -125,7 +175,7 @@
                              </div>
                              <div class="about-section">
                                  <h5><a class="about-section-title" href="#about-4">
-								 Sed do eiusmod<i class="glyphicon glyphicon-chevron-down"> </i> </a>
+								 NHIF<i class="glyphicon glyphicon-chevron-down"> </i> </a>
                                  </h5>
                                  <div id="about-4" class="about-section-content" style="display: none;">
                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -137,89 +187,9 @@
 					   <div class="clearfix"></div>
             </div>
         </div>
-    <!--About-->
+    <!--Calculator-->
     
-    
-    <!--Count-->
-    <div class="count">
-		<div class="container">
-			<div class="col-md-4 count_grid">
-				<div class="numeric">
-                    <div class="count_grid_left">
-					   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-				    </div>
-				    <div class="count_grid_right">
-					   <p class=".Count">11</p> 
-				    </div>
-                </div>
-                
-				<div class="clearfix"> </div>
-				<h3>Our Designers</h3>
-			</div>
-            
-			<div class="col-md-4 count_grid">
-				<div class="count_grid_left">
-					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-				</div>
-				<div class="count_grid_right">
-					<p class=".Count">23</p> 
-				</div>
-                
-				<div class="clearfix"> </div>
-				<h3>Clients</h3>
-			</div>
-            
-			<div class="col-md-4 count_grid">
-				<div class="count_grid_left">
-					<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-				</div>
-				<div class="count_grid_right">
-					<p class=".Count">4</p> 
-				</div>
-                
-				<div class="clearfix"> </div>
-				<h3>Projects</h3>	
-			</div>
-		
-			<div class="clearfix"> </div>	
-		</div>
-	</div>
-    <!--Count-->
-    
-    
-    <!-- Products -->
-    <div class="portfolio" id="products">
-		<div class="container">
-            <h3 class="head">Our Projects</h3></br>
-			<p class="head-content">See Our Products</p>
-				<div class="portfolio-wrap">
-				<div class="col-md-6  portfolio-wrap ">
-					<div class="portfolio-wrap hovereffect">
-						<a class="img-overlay" href="images/1.jpg">
-							<img src="images/1.jpg" alt=" " class="img-responsive">
-							<div class="overlay">
-								<h4>Income Tax Calc</h4>
-                                <p>This calculator is used to..</p>
-							</div>
-						</a>
-                    </div>
-				</div>
-				<div class="col-md-6 portfolio-wrap">
-                    <div class="portfolio-wrap hovereffect">
-						<a class="img-overlay" href="images/2.jpg">
-							<img src="images/2.jpg" alt=" " class="img-responsive">
-							<div class="overlay">
-								<h4>VAT Tax</h4>
-                                <p>Coming Soon ..</p>
-							</div>
-						</a>
-                    </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-<!-- Products -->
+
     
 <!--Footer-->
     <footer>
