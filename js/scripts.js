@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     var payeF = function (taxableIncome) {
         var paye = 0;
-            if (grossIncome >= 11135){
+            if (grossIncome > 11846){
                     if (taxableIncome <= 10164) {
                     return paye = 0.1*taxableIncome-personalRelief;
                 }   else if (taxableIncome >= 10165 && taxableIncome <= 19740) {
@@ -104,7 +104,7 @@ $(document).ready(function() {
            
 
             $("#grossIncome").empty().append(grossIncome);
-            $("#nssf").empty().append(nssfF());
+            $("#nssf").empty().append(nssfF().toFixed(2));
             $("#taxablePay").empty().append(taxableIncome);
             $("#personalR").empty().append(personalRelief);
             $("#insuranceR").empty().append(grossIncome);
