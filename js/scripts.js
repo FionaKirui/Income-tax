@@ -19,19 +19,22 @@ $(document).ready(function() {
 
     var payeF = function (taxableIncome) {
         var paye = 0;
-
-            if (taxableIncome <= 10164) {
-                return paye = 0.1*taxableIncome-personalRelief;
-            }   else if (taxableIncome >= 10165 && taxableIncome <= 19740) {
-                return paye = (taxableIncome-10165)*0.15 + 1016.4-personalRelief ;
-            }   else if (taxableIncome >= 19741 && taxableIncome <= 29316) {
-                return paye = (taxableIncome-19741)*0.20 + 2452.65-personalRelief ;
-            }    else if (taxableIncome >= 29317 && taxableIncome <= 38892) {
-                return paye = (taxableIncome-29317)*0.25 + 4367.65 - personalRelief;
-            }   else if (taxableIncome >= 38892) {
-                return paye = (taxableIncome-38892)*0.3 + 6761.4-personalRelief;
-            }   else return(0);
-       
+            if (grossIncome >= 11135){
+                    if (taxableIncome <= 10164) {
+                    return paye = 0.1*taxableIncome-personalRelief;
+                }   else if (taxableIncome >= 10165 && taxableIncome <= 19740) {
+                    return paye = (taxableIncome-10165)*0.15 + 1016.4-personalRelief ;
+                }   else if (taxableIncome >= 19741 && taxableIncome <= 29316) {
+                    return paye = (taxableIncome-19741)*0.20 + 2452.65-personalRelief ;
+                }    else if (taxableIncome >= 29317 && taxableIncome <= 38892) {
+                    return paye = (taxableIncome-29317)*0.25 + 4367.65 - personalRelief;
+                }   else if (taxableIncome >= 38892) {
+                    return paye = (taxableIncome-38892)*0.3 + 6761.4-personalRelief;
+                }   else return(0);
+            }   else {
+                return  paye = 0;
+            }
+            
     };
 
     //NHIF Function ...
@@ -81,7 +84,7 @@ $(document).ready(function() {
     var nssfF = function () {
         var nssf = 0;
         if ( grossIncome <= 18000){
-            return nssf = 0.6* grossIncome;
+            return nssf = 0.06* grossIncome;
         }   else return(1080);
     };
 
@@ -92,13 +95,13 @@ $(document).ready(function() {
 //jQuery User Interface....
 
     $("#newrate").click(function(){
-            var grossIncome = parseInt($("input#income").val());
-            var taxableIncome = grossIncome - nssfF();
-            var netPay = grossIncome - nssfF() - payeF(taxableIncome) - nhifF(grossIncome);
-            var effectiveRate = payeF(taxableIncome) / grossIncome * 100;
+            grossIncome = parseInt($("input#income").val());
+            taxableIncome = grossIncome - nssfF();
+            netPay = grossIncome - nssfF() - payeF(taxableIncome) - nhifF(grossIncome);
+            effectiveRate = payeF(taxableIncome) / grossIncome * 100;
 
             event.preventDefault();
-            
+           
 
             $("#grossIncome").empty().append(grossIncome);
             $("#nssf").empty().append(nssfF());
@@ -112,10 +115,10 @@ $(document).ready(function() {
           
     });
     $("#oldrate").click(function(){
-            var grossIncome = parseInt($("input#income").val());
-            var taxableIncome = grossIncome - oldnssf;
-            var netPay = grossIncome - oldnssf - payeF(taxableIncome) - nhifF(grossIncome);
-            var effectiveRate = payeF(taxableIncome) / grossIncome * 100;
+            grossIncome = parseInt($("input#income").val());
+            taxableIncome = grossIncome - oldnssf;
+            netPay = grossIncome - oldnssf - payeF(taxableIncome) - nhifF(grossIncome);
+            effectiveRate = payeF(taxableIncome) / grossIncome * 100;
 
             event.preventDefault();
             
